@@ -156,4 +156,109 @@ a { color: var(--tiffany); text-decoration: none; }
     .hero { min-height: 100vh; }
 }
 
+/* Chart */
+.poverty-chart {
+  padding: 5rem 0;
+  max-width: 1000px;
+  margin: 4rem auto;
+  background: #4C6663;         
+  border-radius: 16px;          
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  padding: 3rem 2rem;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.y-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;                 
+  margin-right: 1rem;
+  color: #ffffff;              
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.bars {
+  height: 300px; 
+  display: flex;
+  align-items: flex-end;
+  gap: 3rem;
+  border-left: 2px solid #A7E8BD;
+  border-bottom: 2px solid #A7E8BD;
+  padding-left: 1.5rem;
+}
+
+
+.bar {
+  width: 120px;                  
+  background: #6A8EAE;          
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: var(--height);
+  position: relative;
+  border-radius: 8px 8px 0 0;
+  transition: background 0.3s ease;
+}
+
+.bar:hover {
+  background: #32DE8A;           
+}
+
+.bar .value {
+  position: absolute;
+  top: -2rem;
+  color: #ffffff;                
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.bar .label {
+  margin-top: 0.8rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+.chart-info {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+/* chart content */
+
+.info-text {
+  flex: 1;
+  background: #49615c;        
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid #9fc6b6;
+}
+
+.info-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.info-image img {
+  max-width: 100%;
+  border-radius: 1rem;
+  border: 2px solid #9fc6b6;
+}
+
 
