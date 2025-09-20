@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="desktop">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>giveon – Home</title>
+    <meta name="description" content="GiveOn - Connecting compassionate individuals with meaningful causes to create positive impact in communities worldwide">
+    <meta name="keywords" content="charity, donation, poverty relief, community support, NGO, advocacy">
+    <title>GiveOn – Making a Difference Through Giving</title>
     <!-- Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,58 +13,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="topbar">
+    <header class="topbar" role="banner">
         <div class="container">
             <div class="topbar-left">
-                <div class="custom-logo">
-                    <span class="logo-give">give</span>
-                    <span class="logo-o">
-                        <span class="leaf-icon">🌿</span>
-                        o
-                    </span>
-                    <span class="logo-n">n</span>
-                </div>
+                <a href="#home" class="logo-link" aria-label="GiveOn Home">
+                    <div class="custom-logo">
+                        <span class="logo-give">give</span>
+                        <span class="logo-o">
+                            <span class="leaf-icon" aria-hidden="true">🌿</span>
+                            o
+                        </span>
+                        <span class="logo-n">n</span>
+                    </div>
+                </a>
             </div>
-            <nav class="topbar-right">
-                <a href="#home">donate</a>
-                <span class="sep">|</span>
-                <a href="#advocacies">advocacies</a>
-                <span class="sep">|</span>
-                <a href="#about">about us</a>
-                <span class="sep">|</span>
-                <a href="#team">team</a>
-                <span class="sep">|</span>
-                <a href="#contact">contact</a>
+            <nav class="topbar-right" role="navigation" aria-label="Main navigation">
+                <a href="#home" class="nav-link" data-section="home">donate</a>
+                <span class="sep" aria-hidden="true">|</span>
+                <a href="#advocacies" class="nav-link" data-section="advocacies">advocacies</a>
+                <span class="sep" aria-hidden="true">|</span>
+                <a href="#about" class="nav-link" data-section="about">about us</a>
+                <span class="sep" aria-hidden="true">|</span>
+                <a href="#team" class="nav-link" data-section="team">team</a>
+                <span class="sep" aria-hidden="true">|</span>
+                <a href="#contact" class="nav-link" data-section="contact">contact</a>
             </nav>
-        </div>
-    </div>
-
-    <header id="home" class="hero">
-        <div class="hero-media"><!-- background image via CSS --></div>
-        <div class="container hero-content">
-            <div class="brand">
-                <img src="resources\images\GiveonLogo\GiveOnRemoveBG.png" alt="giveon" class="brand-logo">
-            </div>
-            <div class="hero-bottom">
-                <p class="hero-subtitle">Give On—So Poverty Won’t Go On.</p>
-                <a href="#about" class="btn btn-light">Learn More</a>
-            </div>
         </div>
     </header>
 
-    <section id="about" class="about section fullscreen">
+    <main id="home" class="hero" role="main">
+        <div class="hero-media" aria-hidden="true"><!-- background image via CSS --></div>
+        <div class="container hero-content">
+            <div class="brand">
+                <img src="resources/images/GiveonLogo/GiveOnRemoveBG.png" alt="GiveOn Logo - Making a difference through giving" class="brand-logo">
+            </div>
+            <div class="hero-bottom">
+                <h1 class="hero-subtitle">Give On—So Poverty Won't Go On.</h1>
+                <a href="#about" class="btn btn-light" role="button" aria-label="Learn more about our mission">Learn More</a>
+            </div>
+        </div>
+    </main>
+
+    <section id="about" class="about section fullscreen" aria-labelledby="about-title">
         <div class="container about-grid">
             <div class="about-photo">
                 <div class="image-container-small flex nogutter">
-                    <img decoding="async" width="680" height="693" src="resources/images/image1.jpg" alt="About" class="main-image">
+                    <img decoding="async" width="680" height="693" src="resources/images/image1.jpg" alt="Community members working together to create positive change" class="main-image">
                 </div>
                 <div class="overlay-image">
-                    <img src="resources/images/Image2.jpg" alt="About overlay" class="small-image">
+                    <img src="resources/images/Image2.jpg" alt="Hands holding dollar bill representing financial support" class="small-image">
                 </div>
             </div>
             <div class="about-card">
-                <h3>WHAT WE DO.</h3>
-                <p>
+                <h2 id="about-title" class="about-title">WHAT WE DO.</h2>
+                <p class="about-description">
                     Many people have been struggling to live comfortably in their daily lives. Some have little to no access to basic needs.
                     Our goal as a team is to provide the people with essential needs and to help them live without poverty.
                    We work hand-in-hand with local communities, volunteers, and partners to create sustainable solutions that
@@ -72,59 +76,73 @@
                    Together, we believe that small acts of kindness can create a big impact—and every step we take brings us
                    closer to a world where no one is left behind.
                 </p>
-                <a href="#advocacies" class="link">Learn More »</a>
+                <a href="#advocacies" class="link about-link" aria-label="Learn more about our advocacy groups">Learn More »</a>
             </div>
         </div>
     </section>
 
-       <section id="advocacies" class="advocacies section fullscreen">
+    <section id="advocacies" class="advocacies section fullscreen" aria-labelledby="advocacy-title">
         <div class="container">
-            <h3 class="section-title">ADVOCACY GROUPS</h3>
+            <h2 id="advocacy-title" class="section-title">ADVOCACY GROUPS</h2>
             <p class="section-subtitle">Donate to partner NGOs. Learn stories, volunteer, and create impact.</p>
 
-            <div class="advocacy-cards">
-                <a href="https://www.savethechildren.org.ph/" target="_blank" class="advocacy-card">
-                    <img src="resources\images\AvocacyPhotos\savethechildren.png" alt="Save the Children">
+            <div class="advocacy-cards" role="list">
+                <a href="https://www.savethechildren.org.ph/" target="_blank" class="advocacy-card" role="listitem" aria-label="Visit Save the Children website">
+                    <img src="resources/images/AvocacyPhotos/savethechildren.png" alt="Save the Children logo" class="advocacy-logo">
                     <div class="name">Save the Children</div>
+                    <p>Save the Children works in over 100 countries to ensure every child has the right to survival, protection,
+                       development, and participation. They focus on emergency relief, education, child protection, healthcare, and
+                        fighting child hunger. Their mission is to give children a healthy start in life, the opportunity to learn, and
+                        protection from harm.
+                    </p>
                     <span class="cta">Read more »</span>
                 </a>
-                <a href="https://www.oxfamamerica.org/" target="_blank" class="advocacy-card">
-                    <img src="resources\images\AvocacyPhotos\oxpam.png" alt="OXFAM">
+                <a href="https://www.oxfamamerica.org/" target="_blank" class="advocacy-card" role="listitem" aria-label="Visit OXFAM America website">
+                    <img src="resources/images/AvocacyPhotos/oxpam.png" alt="OXFAM logo" class="advocacy-logo">
                     <div class="name">OXFAM</div>
+                    <p>Oxfam is a global movement tackling the root causes of poverty and injustice. They fight inequality through
+                       programs that empower communities, promote sustainable livelihoods, respond to disasters, and advocate
+                       for fair economic systems. Oxfam believes in building a future where everyone can thrive, free from poverty.
+                    </p>
                     <span class="cta">Read more »</span>
                 </a>
-                <a href="https://www.unicef.org/" target = "_blank" class="advocacy-card">
-                    <img src="resources\images\AvocacyPhotos\unicef.png" alt="UNICEF">
+                <a href="https://www.unicef.org/" target="_blank" class="advocacy-card" role="listitem" aria-label="Visit UNICEF website">
+                    <img src="resources/images/AvocacyPhotos/unicef.png" alt="UNICEF logo" class="advocacy-logo">
                     <div class="name">UNICEF</div>
+                    <p>UNICEF (United Nations International Children’s Emergency Fund) works to protect the rights and well-being
+                        of every child, everywhere. They provide life-saving aid such as clean water, nutrition, vaccines, and
+                        education, especially during emergencies and conflicts. UNICEF’s mission is to build a world where every
+                        child can reach their full potential.
+                    </p>
                     <span class="cta">Read more »</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="news" class="news section fullscreen">
+    <section id="news" class="news section fullscreen" aria-labelledby="news-title">
         <div class="container">
             <div class="news-card">
-                <div class="news-media"><!-- image via CSS --></div>
+                <div class="news-media" aria-hidden="true"><!-- image via CSS --></div>
                 <div class="news-overlay">
                     <div class="news-kicker">NEWS AND UPDATES</div>
-                    <h4 class="news-title">14 Million Filipino Families Consider Themselves Poor — SWS</h4>
+                    <h2 id="news-title" class="news-title">14 Million Filipino Families Consider Themselves Poor — SWS</h2>
                     <p class="news-excerpt">
                         Vivamus pharetra orci at sem, pellentesque dictum nibh.
                         Donec convallis hendrerit velit at aliquet. Integer eget
                         condimentum nisl at velit aliquet.
                     </p>
-                   <a href="https://newsinfo.inquirer.net/1766165/14-million-filipino-families-consider-themselves-poor-sws" target="_blank" class="link">Learn More »</a>
+                   <a href="https://newsinfo.inquirer.net/1766165/14-million-filipino-families-consider-themselves-poor-sws" target="_blank" class="link news-link" aria-label="Read full news article about poverty statistics">Learn More »</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="poverty-chart section fullscreen">
+    <section id="statistics" class="poverty-chart section fullscreen" aria-labelledby="chart-title">
         <div class="container">
-            <h3 class="section-title">Poverty Incidence in the Philippines</h3>
-            <div class="chart">
-                <div class="y-axis">
+            <h2 id="chart-title" class="section-title">Poverty Incidence in the Philippines</h2>
+            <div class="chart" role="img" aria-label="Bar chart showing poverty incidence rates from 2015 to 2023">
+                <div class="y-axis" aria-hidden="true">
                     <span>30%</span>
                     <span>25%</span>
                     <span>20%</span>
@@ -134,31 +152,30 @@
                     <span>0%</span>
                 </div>
 
-                <div class="bars">
-                    <div class="bar" style="--height: 85%">
+                <div class="bars" role="list">
+                    <div class="bar" style="--height: 85%" role="listitem" aria-label="2015 poverty rate: 23.5%">
                         <span class="value">23.5%</span>
                         <span class="label">2015</span>
                     </div>
-                    <div class="bar" style="--height: 69%">
+                    <div class="bar" style="--height: 69%" role="listitem" aria-label="2018 poverty rate: 16.7%">
                         <span class="value">16.7%</span>
                         <span class="label">2018</span>
                     </div>
-                    <div class="bar" style="--height: 73%">
+                    <div class="bar" style="--height: 73%" role="listitem" aria-label="2021 poverty rate: 18.1%">
                         <span class="value">18.1%</span>
                         <span class="label">2021</span>
                     </div>
-                    <div class="bar" style="--height: 65%">
+                    <div class="bar" style="--height: 65%" role="listitem" aria-label="2023 poverty rate: 15.5%">
                         <span class="value">15.5%</span>
                         <span class="label">2023</span>
                     </div>
                 </div>
             </div>
 
-            <!--Image section -->
             <div class="chart-info">
                 <div class="info-text">
-                    <h4>About the Chart</h4>
-                    <p>
+                    <h3 class="info-title">About the Chart</h3>
+                    <p class="info-description">
                         This chart shows the poverty incidence rate in the Philippines from 2015 to 2023, 
                         based on data from the Philippine Statistics Authority. Despite fluctuations, 
                         the overall trend shows gradual improvement in poverty reduction efforts. 
@@ -167,61 +184,60 @@
                     </p>
                 </div>
                 <div class="info-image">
-                    <img src="resources/images/News Image.jpg" alt="Poverty statistics visualization">
+                    <img src="resources/images/News Image.jpg" alt="Visual representation of poverty statistics and community impact" class="chart-image">
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Meet the Team Section -->
-    <section id="team" class="team section fullscreen">
+    <section id="team" class="team section fullscreen" aria-labelledby="team-title">
         <div class="container">
-            <h3 class="section-title">MEET THE TEAM</h3>
+            <h2 id="team-title" class="section-title">MEET THE TEAM</h2>
             <p class="section-subtitle">The passionate individuals behind GiveOn's mission to make a difference.</p>
             
-            <div class="team-grid">
-                <div class="team-member">
+            <div class="team-grid" role="list">
+                <div class="team-member" role="listitem">
                     <div class="member-photo">
-                        <img src="resources/images/Image2.jpg" alt="Team Member 1">
+                        <img src="resources/images/Image2.jpg" alt="John Smith, Founder & CEO" class="member-image">
                     </div>
-                    <h4>John Smith</h4>
+                    <h3 class="member-name">John Smith</h3>
                     <p class="member-role">Founder & CEO</p>
                     <p class="member-bio">Passionate about social change and community development with over 10 years of experience in non-profit work.</p>
                 </div>
                 
-                <div class="team-member">
+                <div class="team-member" role="listitem">
                     <div class="member-photo">
-                        <img src="resources/images/image1.jpg" alt="Team Member 2">
+                        <img src="resources/images/image1.jpg" alt="Sarah Johnson, Operations Director" class="member-image">
                     </div>
-                    <h4>Sarah Johnson</h4>
+                    <h3 class="member-name">Sarah Johnson</h3>
                     <p class="member-role">Operations Director</p>
                     <p class="member-bio">Expert in program management and volunteer coordination, ensuring our initiatives reach those who need them most.</p>
                 </div>
                 
-                <div class="team-member">
+                <div class="team-member" role="listitem">
                     <div class="member-photo">
-                        <img src="resources/images/Image2.jpg" alt="Team Member 3">
+                        <img src="resources/images/Image2.jpg" alt="Michael Chen, Community Outreach" class="member-image">
                     </div>
-                    <h4>Michael Chen</h4>
+                    <h3 class="member-name">Michael Chen</h3>
                     <p class="member-role">Community Outreach</p>
                     <p class="member-bio">Building bridges between communities and organizations to create lasting positive impact.</p>
                 </div>
                 
-                <div class="team-member">
+                <div class="team-member" role="listitem">
                     <div class="member-photo">
-                        <img src="resources/images/image1.jpg" alt="Team Member 4">
+                        <img src="resources/images/image1.jpg" alt="Emily Rodriguez, Communications Lead" class="member-image">
                     </div>
-                    <h4>Emily Rodriguez</h4>
+                    <h3 class="member-name">Emily Rodriguez</h3>
                     <p class="member-role">Communications Lead</p>
                     <p class="member-bio">Spreading awareness and connecting donors with causes that matter through compelling storytelling.</p>
                 </div>
                 
-                <div class="team-member">
+                <div class="team-member" role="listitem">
                     <div class="member-photo">
-                        <img src="resources/images/Image2.jpg" alt="Team Member 5">
+                        <img src="resources/images/Image2.jpg" alt="David Kim, Technology Director" class="member-image">
                     </div>
-                    <h4>David Kim</h4>
+                    <h3 class="member-name">David Kim</h3>
                     <p class="member-role">Technology Director</p>
                     <p class="member-bio">Building innovative platforms to make giving accessible and transparent for everyone.</p>
                 </div>
@@ -229,51 +245,61 @@
             
             <div class="mission-vision">
                 <div class="mission-card">
-                    <h4>MISSION</h4>
-                    <p>To connect compassionate individuals with meaningful causes, creating a network of support that uplifts communities and transforms lives through collective action and sustainable giving.</p>
+                    <h3 class="card-title">MISSION</h3>
+                    <p class="card-content">To connect compassionate individuals with meaningful causes, creating a network of support that uplifts communities and transforms lives through collective action and sustainable giving.</p>
                 </div>
                 <div class="vision-card">
-                    <h4>VISION</h4>
-                    <p>To build a world where no one faces poverty alone, where every person has access to basic needs, education, and opportunities to thrive in a supportive, interconnected community.</p>
+                    <h3 class="card-title">VISION</h3>
+                    <p class="card-content">To build a world where no one faces poverty alone, where every person has access to basic needs, education, and opportunities to thrive in a supportive, interconnected community.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="site-footer">
+    <footer id="contact" class="site-footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>GET CONNECTED WITH US</h4>
-                    <p>Join our mission to make a difference in communities worldwide.</p>
+                    <h3 class="footer-title">GET CONNECTED WITH US</h3>
+                    <p class="footer-description">Join our mission to make a difference in communities worldwide.</p>
                 </div>
                 
                 <div class="footer-info">
                     <div class="contact-info">
-                        <h5>GIVEON INC.</h5>
-                        <p>123 Charity Street<br>Community District<br>Philippines 1000</p>
+                        <h4 class="contact-title">GIVEON INC.</h4>
+                        <address class="contact-details">
+                            123 Charity Street<br>
+                            Community District<br>
+                            Philippines 1000
+                        </address>
                     </div>
                     
                     <div class="contact-info">
-                        <h5>EMAIL ADDRESS</h5>
-                        <p>info@giveon.org<br>support@giveon.org</p>
+                        <h4 class="contact-title">EMAIL ADDRESS</h4>
+                        <div class="contact-details">
+                            <a href="mailto:info@giveon.org" class="email-link">info@giveon.org</a><br>
+                            <a href="mailto:support@giveon.org" class="email-link">support@giveon.org</a>
+                        </div>
                     </div>
                     
                     <div class="contact-info">
-                        <h5>PHONE NUMBER</h5>
-                        <p>+63 2 1234 5678<br>+63 917 123 4567</p>
+                        <h4 class="contact-title">PHONE NUMBER</h4>
+                        <div class="contact-details">
+                            <a href="tel:+63212345678" class="phone-link">+63 2 1234 5678</a><br>
+                            <a href="tel:+639171234567" class="phone-link">+63 917 123 4567</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="social-media">
-                    <a href="#" class="social-link facebook" aria-label="Facebook">
-                        <span>f</span>
+                    <a href="#" class="social-link facebook" aria-label="Follow us on Facebook">
+                        <span class="social-icon" aria-hidden="true">f</span>
                     </a>
-                    <a href="#" class="social-link instagram" aria-label="Instagram">
-                        <span>📷</span>
+                    <a href="#" class="social-link instagram" aria-label="Follow us on Instagram">
+                        <span class="social-icon" aria-hidden="true">📷</span>
                     </a>
-                    <a href="#" class="social-link linkedin" aria-label="LinkedIn">
-                        <span>in</span>
+                    <a href="#" class="social-link linkedin" aria-label="Connect with us on LinkedIn">
+                        <span class="social-icon" aria-hidden="true">in</span>
                     </a>
                 </div>
             </div>
