@@ -3,13 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GiveOn - Connecting compassionate individuals with meaningful causes to create positive impact in communities worldwide">
+    <meta name="description" content="Give On—So Poverty Won't Go On. ">
     <meta name="keywords" content="charity, donation, poverty relief, community support, NGO, advocacy">
-    <title>GiveOn – Making a Difference Through Giving</title>
-    <!-- Inter font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>GiveOn</title>
+    <link rel="icon" href="resources/images/GiveonLogo/GiveOnRemoveBG.svg" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: 'Inter';
+            src: url('resources/fonts/Inter-Regular.woff2') format('woff2'),
+                 url('resources/fonts/Inter-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Inter';
+            src: url('resources/fonts/Inter-Medium.woff2') format('woff2'),
+                 url('resources/fonts/Inter-Medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Inter';
+            src: url('resources/fonts/Inter-SemiBold.woff2') format('woff2'),
+                 url('resources/fonts/Inter-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Inter';
+            src: url('resources/fonts/Inter-Bold.woff2') format('woff2'),
+                 url('resources/fonts/Inter-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Inter';
+            src: url('resources/fonts/Inter-ExtraBold.woff2') format('woff2'),
+                 url('resources/fonts/Inter-ExtraBold.woff') format('woff');
+            font-weight: 800;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Inter';
+            src: url('resources/fonts/Inter-Light.woff2') format('woff2'),
+                 url('resources/fonts/Inter-Light.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,12 +74,17 @@
                     </div>
                 </a>
             </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                ☰
+            </button>
             <nav class="topbar-right" role="navigation" aria-label="Main navigation">
-                <a href="#home" class="nav-link" data-section="home">donate</a>
-                <span class="sep" aria-hidden="true">|</span>
                 <a href="#advocacies" class="nav-link" data-section="advocacies">advocacies</a>
                 <span class="sep" aria-hidden="true">|</span>
                 <a href="#about" class="nav-link" data-section="about">about us</a>
+                <span class="sep" aria-hidden="true">|</span>
+                <a href="#statistics" class="nav-link" data-section="statistics">statistics</a>
+                <span class="sep" aria-hidden="true">|</span>
+                <a href="#news" class="nav-link" data-section="news">news and updates</a>
                 <span class="sep" aria-hidden="true">|</span>
                 <a href="#team" class="nav-link" data-section="team">team</a>
                 <span class="sep" aria-hidden="true">|</span>
@@ -45,7 +97,7 @@
         <div class="hero-media" aria-hidden="true"><!-- background image via CSS --></div>
         <div class="container hero-content">
             <div class="brand">
-                <img src="resources/images/GiveonLogo/GiveOnRemoveBG.png" alt="GiveOn Logo - Making a difference through giving" class="brand-logo">
+                <img src="resources/images/GiveonLogo/GiveOnRemoveBG.png" alt="GiveOn Logo - Give On—So Poverty Won't Go On." class="brand-logo">
             </div>
             <div class="hero-bottom">
                 <h1 class="hero-subtitle">Give On—So Poverty Won't Go On.</h1>
@@ -67,8 +119,8 @@
             <div class="about-card">
                 <h2 id="about-title" class="about-title">WHAT WE DO.</h2>
                 <p class="about-description">
-                    Many people have been struggling to live comfortably in their daily lives. Some have little to no access to basic needs.
-                    Our goal as a team is to provide the people with essential needs and to help them live without poverty.
+                   Many people have been struggling to live comfortably in their daily lives. Some have little to no access to basic needs.
+                   Our goal as a team is to provide the people with essential needs and to help them live without poverty.
                    We work hand-in-hand with local communities, volunteers, and partners to create sustainable solutions that
                    not only address immediate needs but also empower individuals for long-term growth. Through awareness
                    campaigns, livelihood programs, and resource distribution, we aim to break the cycle of poverty and build a
@@ -76,15 +128,19 @@
                    Together, we believe that small acts of kindness can create a big impact—and every step we take brings us
                    closer to a world where no one is left behind.
                 </p>
-                <a href="#advocacies" class="link about-link" aria-label="Learn more about our advocacy groups">Learn More »</a>
             </div>
         </div>
     </section>
 
     <section id="advocacies" class="advocacies section fullscreen" aria-labelledby="advocacy-title">
         <div class="container">
-            <h2 id="advocacy-title" class="section-title">ADVOCACY GROUPS</h2>
-            <p class="section-subtitle">Donate to partner NGOs. Learn stories, volunteer, and create impact.</p>
+            <div class="advocacy-header">
+                <h2 id="advocacy-title" class="advocacy-title">ADVOCACY GROUPS</h2>
+                <p class="advocacy-subtitle">Donate to partner NGOs. Learn stories, volunteer, and create impact.
+                    Join hands with communities, support sustainable programs, and be a voice for change.
+                    Every effort counts — whether through time, skills, or resources — in building a brighter future.
+                </p>
+            </div>
 
             <div class="advocacy-cards" role="list">
                 <a href="https://www.savethechildren.org.ph/" target="_blank" class="advocacy-card" role="listitem" aria-label="Visit Save the Children website">
@@ -122,17 +178,24 @@
 
     <section id="news" class="news section fullscreen" aria-labelledby="news-title">
         <div class="container">
+            <div class="news-header">
+                <h2 class="news-section-title">NEWS & UPDATES</h2>
+                <p class="news-section-subtitle">Stay informed with the latest developments in poverty relief and community impact.</p>
+            </div>
+            
             <div class="news-card">
                 <div class="news-media" aria-hidden="true"><!-- image via CSS --></div>
                 <div class="news-overlay">
-                    <div class="news-kicker">NEWS AND UPDATES</div>
-                    <h2 id="news-title" class="news-title">14 Million Filipino Families Consider Themselves Poor — SWS</h2>
+                    <div class="news-kicker">LATEST NEWS</div>
+                    <h3 id="news-title" class="news-title">14 Million Filipino Families Consider Themselves Poor — SWS</h3>
                     <p class="news-excerpt">
-                        Vivamus pharetra orci at sem, pellentesque dictum nibh.
-                        Donec convallis hendrerit velit at aliquet. Integer eget
-                        condimentum nisl at velit aliquet.
+                        According to the latest survey, millions of Filipino families still identify
+                        themselves as poor, reflecting the ongoing struggle with rising prices,
+                        limited job opportunities, and lack of access to basic services. Behind these
+                        statistics are real stories of hardship, resilience, and the urgent need for
+                        sustainable solutions that uplift communities and create lasting change.
                     </p>
-                   <a href="https://newsinfo.inquirer.net/1766165/14-million-filipino-families-consider-themselves-poor-sws" target="_blank" class="link news-link" aria-label="Read full news article about poverty statistics">Learn More »</a>
+                   <a href="https://newsinfo.inquirer.net/1766165/14-million-filipino-families-consider-themselves-poor-sws" target="_blank" class="news-link" aria-label="Read full news article about poverty statistics">Learn More »</a>
                 </div>
             </div>
         </div>
@@ -140,8 +203,13 @@
 
     <section id="statistics" class="poverty-chart section fullscreen" aria-labelledby="chart-title">
         <div class="container">
-            <h2 id="chart-title" class="section-title">Poverty Incidence in the Philippines</h2>
-            <div class="chart" role="img" aria-label="Bar chart showing poverty incidence rates from 2015 to 2023">
+            <div class="chart-header">
+                <h2 id="chart-title" class="chart-title">POVERTY INCIDENCE IN THE PHILIPPINES</h2>
+                <p class="chart-subtitle">Understanding the data behind poverty reduction efforts and community impact.</p>
+            </div>
+            
+            <div class="chart-container">
+                <div class="chart" role="img" aria-label="Bar chart showing poverty incidence rates from 2015 to 2023">
                 <div class="y-axis" aria-hidden="true">
                     <span>30%</span>
                     <span>25%</span>
@@ -184,7 +252,7 @@
                     </p>
                 </div>
                 <div class="info-image">
-                    <img src="resources/images/News Image.jpg" alt="Visual representation of poverty statistics and community impact" class="chart-image">
+                    <img src="resources\images\PovertyIncidence.png" alt="Visual representation of poverty statistics and community impact" class="chart-image">
                 </div>
             </div>
 
@@ -193,64 +261,91 @@
 
     <section id="team" class="team section fullscreen" aria-labelledby="team-title">
         <div class="container">
-            <h2 id="team-title" class="section-title">MEET THE TEAM</h2>
-            <p class="section-subtitle">The passionate individuals behind GiveOn's mission to make a difference.</p>
-            
-            <div class="team-grid" role="list">
-                <div class="team-member" role="listitem">
-                    <div class="member-photo">
-                        <img src="resources/images/Image2.jpg" alt="John Smith, Founder & CEO" class="member-image">
-                    </div>
-                    <h3 class="member-name">John Smith</h3>
-                    <p class="member-role">Founder & CEO</p>
-                    <p class="member-bio">Passionate about social change and community development with over 10 years of experience in non-profit work.</p>
-                </div>
-                
-                <div class="team-member" role="listitem">
-                    <div class="member-photo">
-                        <img src="resources/images/image1.jpg" alt="Sarah Johnson, Operations Director" class="member-image">
-                    </div>
-                    <h3 class="member-name">Sarah Johnson</h3>
-                    <p class="member-role">Operations Director</p>
-                    <p class="member-bio">Expert in program management and volunteer coordination, ensuring our initiatives reach those who need them most.</p>
-                </div>
-                
-                <div class="team-member" role="listitem">
-                    <div class="member-photo">
-                        <img src="resources/images/Image2.jpg" alt="Michael Chen, Community Outreach" class="member-image">
-                    </div>
-                    <h3 class="member-name">Michael Chen</h3>
-                    <p class="member-role">Community Outreach</p>
-                    <p class="member-bio">Building bridges between communities and organizations to create lasting positive impact.</p>
-                </div>
-                
-                <div class="team-member" role="listitem">
-                    <div class="member-photo">
-                        <img src="resources/images/image1.jpg" alt="Emily Rodriguez, Communications Lead" class="member-image">
-                    </div>
-                    <h3 class="member-name">Emily Rodriguez</h3>
-                    <p class="member-role">Communications Lead</p>
-                    <p class="member-bio">Spreading awareness and connecting donors with causes that matter through compelling storytelling.</p>
-                </div>
-                
-                <div class="team-member" role="listitem">
-                    <div class="member-photo">
-                        <img src="resources/images/Image2.jpg" alt="David Kim, Technology Director" class="member-image">
-                    </div>
-                    <h3 class="member-name">David Kim</h3>
-                    <p class="member-role">Technology Director</p>
-                    <p class="member-bio">Building innovative platforms to make giving accessible and transparent for everyone.</p>
-                </div>
+            <div class="team-header">
+                <h2 id="team-title" class="team-title">MEET THE TEAM</h2>
+                <p class="team-subtitle">The passionate individuals behind GiveOn's mission to make a difference.</p>
             </div>
             
-            <div class="mission-vision">
-                <div class="mission-card">
-                    <h3 class="card-title">MISSION</h3>
-                    <p class="card-content">To connect compassionate individuals with meaningful causes, creating a network of support that uplifts communities and transforms lives through collective action and sustainable giving.</p>
+            <div class="team-content">
+                <div class="team-grid" role="list">
+                    <div class="team-member" role="listitem">
+                        <div class="member-photo">
+                            <img src="resources/images/Meet The Team Resources/Espartinass_Carl.png" alt="Espartinas Carl" class="member-image">
+                        </div>
+                        <h3 class="member-name">Espartinas Carl</h3>
+                        <p class="member-role">Founder & CEO</p>
+                        <p class="member-bio">Dedicated to driving sustainable change by leading donation campaigns and mobilizing resources that directly support underprivileged communities.</p>
+                    </div>
+                    
+                    <div class="team-member" role="listitem">
+                        <div class="member-photo">
+                            <img src="resources/images/Meet The Team Resources/Junio,Gideon.png" alt="Junio Gideon" class="member-image">
+                        </div>
+                        <h3 class="member-name">Junio Gideon</h3>
+                        <p class="member-role">Operations Director</p>
+                        <p class="member-bio">Specializes in managing donation programs and coordinating fund distribution to ensure contributions reach the families and communities most in need.</p>
+                    </div>
+                    
+                    <div class="team-member" role="listitem">
+                        <div class="member-photo">
+                            <img src="resources/images/Meet The Team Resources/Roxas,Jhorone.png" alt="Roxas Jhorone" class="member-image">
+                        </div>
+                        <h3 class="member-name">Roxas Jhorone</h3>
+                        <p class="member-role">Community Outreach</p>
+                        <p class="member-bio">Strengthens donor relations and community partnerships, making sure every donation creates lasting impact where it matters most.</p>
+                    </div>
+                    
+                    <div class="team-member" role="listitem">
+                        <div class="member-photo">
+                            <img src="resources/images/Meet The Team Resources/Saguire,Andrei.png" alt="Saguire Andrei" class="member-image">
+                        </div>
+                        <h3 class="member-name">Saguire Andrei</h3>
+                        <p class="member-role">Communications Lead</p>
+                        <p class="member-bio">Crafts powerful donation campaigns and stories that connect supporters to causes, inspiring generosity and long-term engagement.</p>
+                    </div>
+                    
+                    <div class="team-member" role="listitem">
+                        <div class="member-photo">
+                            <img src="resources/images/Meet The Team Resources/Tayco,Gabriel.png" alt="Tayco Gabriel" class="member-image">
+                        </div>
+                        <h3 class="member-name">Tayco Gabriel</h3>
+                        <p class="member-role">Technology Director</p>
+                        <p class="member-bio">Develops innovative platforms that make donating easier, transparent, and more accessible for individuals and organizations alike.</p>
+                    </div>
                 </div>
-                <div class="vision-card">
-                    <h3 class="card-title">VISION</h3>
-                    <p class="card-content">To build a world where no one faces poverty alone, where every person has access to basic needs, education, and opportunities to thrive in a supportive, interconnected community.</p>
+                
+                <div class="mission-vision">
+                    <div class="mission-card">
+                        <h3 class="card-title">MISSION</h3>
+                         <p class="card-content">
+                            Our mission is to connect compassionate individuals with meaningful
+                            causes by building strong partnerships with local communities and
+                            organizations. We aim to provide a platform where donors, volunteers,
+                            and advocates can work hand in hand to address poverty, hunger,
+                            education, and healthcare needs. Through sustainable programs, we seek
+                            to empower families to rise above hardship, ensuring that every
+                            contribution—whether big or small—translates into lasting change. By
+                            fostering collaboration and solidarity, we envision a growing movement
+                            of people dedicated to transforming lives, uplifting communities, and
+                            creating pathways for future generations to thrive.
+                        </p>
+                    </div>
+                    <div class="vision-card">
+                        <h3 class="card-title">VISION</h3>
+                        <p class="card-content">
+                            Our vision is to create a world where no one is left behind and where
+                            poverty no longer dictates the course of an individual's life. We
+                            aspire to build communities that are not only resilient but also
+                            self-sustaining, where education, healthcare, and livelihood
+                            opportunities are accessible to everyone. We dream of a society where
+                            generosity and compassion form the foundation of human interaction,
+                            breaking barriers of inequality and indifference. Ultimately, we
+                            envision a global network of empowered individuals and organizations
+                            working together to ensure that every person has the chance to live
+                            with dignity, hope, and purpose in a supportive and interconnected
+                            world.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -292,13 +387,13 @@
                 </div>
                 
                 <div class="social-media">
-                    <a href="#" class="social-link facebook" aria-label="Follow us on Facebook">
+                    <a href="https://facebook.com/login" class="social-link facebook" aria-label="Login to Facebook" target="_blank">
                         <span class="social-icon" aria-hidden="true">f</span>
                     </a>
-                    <a href="#" class="social-link instagram" aria-label="Follow us on Instagram">
+                    <a href="https://instagram.com/accounts/login" class="social-link instagram" aria-label="Login to Instagram" target="_blank">
                         <span class="social-icon" aria-hidden="true">📷</span>
                     </a>
-                    <a href="#" class="social-link linkedin" aria-label="Connect with us on LinkedIn">
+                    <a href="https://linkedin.com/login" class="social-link linkedin" aria-label="Login to LinkedIn" target="_blank">
                         <span class="social-icon" aria-hidden="true">in</span>
                     </a>
                 </div>
